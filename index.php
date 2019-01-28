@@ -1,13 +1,13 @@
 <?php
 
 	// *** Include the class
-    include("resize-class.php");
+    include ("php/class.resize.php");
  
     // *** 1) Initialize / load image
-    $resizeObj = new resize('sample.jpg');
+    $resizeObj = new resize('src/wp.png');
  
     // *** 2) Resize image (options: exact, portrait, landscape, auto, crop)
-    $resizeObj -> resizeImage(150, 100, 'crop');
+    $resizeObj->resizeImage(450, 300, 'crop');
  
     // *** 3) Save image
-    $resizeObj -> saveImage('sample-resized.gif', 100);
+    $resizeObj->saveImage('output/sample-resized.png', 100);
